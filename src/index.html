@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>cartinha 💌</title>
+
+  <style>
+
+    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+
+      text-align: center;
+
+      padding: 50px;
+
+      overflow-x: hidden;
+
+    }
+
+    h1 {
+
+      color: #fff;
+
+      margin-bottom: 30px;
+
+      font-size: 2rem;
+
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+
+    }
+
+    /* Botón romántico */
+
+    .btn {
+
+      background: #ff4d6d;
+
+      color: white;
+
+      border: none;
+
+      padding: 15px 30px;
+
+      font-size: 20px;
+
+      border-radius: 30px;
+
+      cursor: pointer;
+
+      transition: all 0.3s ease;
+
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+
+    }
+
+    .btn:hover {
+
+      background: #e63950;
+
+      transform: scale(1.05);
+
+    }
+
+    /* Cartita oculta */
+
+    #carta {
+
+      display: none;
+
+      margin-top: 30px;
+
+      background: #fff;
+
+      padding: 25px;
+
+      border-radius: 20px;
+
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+      max-width: 450px;
+
+      margin-left: auto;
+
+      margin-right: auto;
+
+      font-size: 18px;
+
+      line-height: 1.6;
+
+      color: #444;
+
+      animation: aparecer 1s ease forwards;
+
+    }
+
+    #carta h2 {
+
+      color: #e63950;
+
+      margin-bottom: 15px;
+
+    }
+
+    /* Animación de aparición */
+
+    @keyframes aparecer {
+
+      from {opacity: 0; transform: translateY(30px);}
+
+      to {opacity: 1; transform: translateY(0);}
+
+    }
+
+    /* Corazones animados */
+
+    .corazon {
+
+      position: absolute;
+
+      color: #ff4d6d;
+
+      font-size: 20px;
+
+      animation: flotar 6s linear infinite;
+
+    }
+
+    @keyframes flotar {
+
+      0% {transform: translateY(0) rotate(0);}
+
+      100% {transform: translateY(-600px) rotate(360deg);}
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>❤️Feliz Aniversario❤️</h1>
+
+  <!-- Botón -->
+
+  <button class="btn" onclick="mostrarCarta()">💌Abrir a Cartinha💌</button>
+
+  <!-- Carta romántica -->
+
+  <div id="carta">
+
+    <h2>✨ Feliz Aniversario ✨</h2>
+
+    <p>Feliz <b>16 anos</b>, Não sei bem o que dizer, mas espero que sua vida seja repleta de felicidade. Que tudo o que você planejou e ainda planeja dê certo, que Deus te abençoe e que tudo se encaminhe da melhor forma. Que sua vida seja cheia de alegria daqui pra frente. Fica com Deus ^^.</p>
+
+    <p>❤️Se Cuida^^❤️ 
+    <p>🌹Feliz Aniversario Livia🌹  
+
+    <br><b> ASS: Thallisson c. silva</b> 💖</p>
+
+  
+    
+    </script>
+
+</body>
+
+</html>
+    
+
+</body>
+
+</html>
+  </div>
+
+  <!-- Script para mostrar carta y corazones -->
+
+  <script>
+
+    function mostrarCarta() {
+
+      document.getElementById("carta").style.display = "block";
+
+      // Crear corazones animados
+
+      for (let i = 0; i < 20; i++) {
+
+        let corazon = document.createElement("div");
+
+        corazon.classList.add("corazon");
+
+        corazon.innerHTML = "❤🌹💌";
+
+        corazon.style.left = Math.random() * window.innerWidth + "px";
+
+        corazon.style.top = window.innerHeight + "px";
+
+        corazon.style.fontSize = (Math.random() * 20 + 15) + "px";
+
+        document.body.appendChild(corazon);
+
+        // Eliminar corazones después de 6s
+
+        setTimeout(() => {
+
+          corazon.remove();
+
+        }, 6000);
+
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>
